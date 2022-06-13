@@ -1,3 +1,7 @@
 auriculares
 teclado
 monitores
+mouse
+pad
+cable midi
+transformador
