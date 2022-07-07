@@ -1,0 +1,76 @@
+.contenedor {
+	height: 1000px;
+	background-color: white;
+	display: flex;
+	align-items: flex-start;
+	/* align-items: flex-end; */
+	align-items: flex-start;
+	/* align-items: stretch; */
+	/* align-items: baseline; */
+}
+
+.contenedor2 {
+	height: 1000px;
+	background-color: white;
+	display: flex;
+	align-items: flex-start;
+	/* align-items: flex-end; */
+	align-items: flex-start;
+	/* align-items: stretch; */
+	/* align-items: baseline; */
+}
+.contenedor3 {
+	height: 1000px;
+	background-color: white;
+	display: flex;
+	align-items: flex-start;
+	/* align-items: flex-end; */
+	align-items: flex-start;
+	/* align-items: stretch; */
+	/* align-items: baseline; */
+}
+.boton.alternar {
+	background: blue; 
+	padding: 40px 40px;
+	cursor: pointer;
+}
+
+.boton.alternar2 {
+	background: red; 
+	padding: 40px 40px;
+	cursor: pointer;
+}
+
+.boton.alternar3 {
+	background: green; 
+	padding: 40px 40px;
+	cursor: pointer;
+}
+
+
+
+.boton.alternar2 {
+	background: red;
+	padding: 40px 40px;
+	cursor: pointer;
+}
+
+.boton.alternar3 {
+	background: green;
+	padding: 40px 40px;
+	cursor: pointer;
+}
+
+.alternar.activo {
+	background: blue;
+}
+
+.alternar2.activo {
+	background: red;
+
+}
+
+.alternar3.activo {
+	background: green;
+
+}
