@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		var metros = prompt ('Ingrese la distancia:','');
+        //var metros = 1004;
+		var transporte = '';
+
+		if (metros > 0 && metros <= 1000) {
+			document.write('pie');
+		} else if (metros > 1000 && metros <= 10000) {
+			document.write('bicicleta');
+		} else if (metros > 10000 && metros <= 30000) {
+			document.write('colectivo');
+		} else if (metros > 30000 && metros <= 100000) {
+			document.write('auto');
+		} else if (metros > 100000 ) {
+			document.write('avion');
+		} 
+
+		
+        
+    </script>
+</body>
+</html>

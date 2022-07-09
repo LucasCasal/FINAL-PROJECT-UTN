@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="tarea1.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <p>
+            <button class="boton"></button>
+            <button class="boton2"></button>
+            <button class="boton3"></button>
+        </p>
+    </div>
+    <script>
+        // CSS
+        var boton = document.getElementsByClassName('contenedor')[0];
+        var boton2 = document.getElementsByClassName('contenedor')[1];
+        var boton3 = document.getElementsByClassName('contenedor')[2];
+        var contenedor = [0,1,2];
+
+
+        /**
+         * classList representa la lista de clases asignadas a un elemento
+         * toggle nos permite "prender" o "apagar" una clase en un objeto
+         * add agrega la clase o clases que le pasemos
+         * remove remueve la clase o clases que le pasemos
+         */
+         if 
+        (boton.addEventListener('click', function (e) {
+            e.target.classList.toggle('activo');
+            {
+            boton.style.backgroundColor = 'red';}
+        }));else if
+        (boton.addEventListener('click', function (e) {
+            e.target.classList.toggle('activo');
+            boton.style.backgroundColor = 'blue';
+        }));else if
+        (boton.addEventListener('click', function (e) {
+            e.target.classList.toggle('activo');
+            boton.style.backgroundColor = 'green';
+        }));
+    </script>
+</body>
+
+</html>
