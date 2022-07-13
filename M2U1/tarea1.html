@@ -9,43 +9,37 @@
 
 <body>
     <div class="contenedor">
-        <p>
-            <button class="boton"></button>
-            <button class="boton2"></button>
-            <button class="boton3"></button>
-        </p>
+        <div class="cuadrado rojo" onclick="cambiarFondo ('red')"></div>
+        <div class="cuadrado verde" onclick="cambiarFondo ('green')"></div>
+        <div class="cuadrado azul" onclick="cambiarFondo ('blue')"></div>
     </div>
-    <script>
-        // CSS
-        var boton = document.getElementsByClassName('contenedor')[0];
-        var boton2 = document.getElementsByClassName('contenedor')[1];
-        var boton3 = document.getElementsByClassName('contenedor')[2];
-        var contenedor = [0,1,2];
+    <style>
+        .contenedor {
+            display: flex;
+        }
+
+        .cuadrado {
+            height: 100px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .rojo {
+            background-color: red;
+        }
 
         .verde {
             background-color: green;
         }
 
-        /**
-         * classList representa la lista de clases asignadas a un elemento
-         * toggle nos permite "prender" o "apagar" una clase en un objeto
-         * add agrega la clase o clases que le pasemos
-         * remove remueve la clase o clases que le pasemos
-         */
-         if 
-        (boton.addEventListener('click', function (e) {
-            e.target.classList.toggle('activo');
-            {
-            boton.style.backgroundColor = 'red';}
-        }));else if
-        (boton.addEventListener('click', function (e) {
-            e.target.classList.toggle('activo');
-            boton.style.backgroundColor = 'blue';
-        }));else if
-        (boton.addEventListener('click', function (e) {
-            e.target.classList.toggle('activo');
-            boton.style.backgroundColor = 'green';
-        }));
+        .azul {
+            background-color: blue;
+        }
+    </style>
+    <script>
+        function cambiarFondo(color) {
+            document.querySelector('body').style.background = color;
+        }
     </script>
 </body>
 
