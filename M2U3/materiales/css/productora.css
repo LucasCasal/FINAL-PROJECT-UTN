@@ -11,7 +11,7 @@ h1,h2 {
 }
 
 .hero {
-    background: url(materiales/img/pandarojoproductora.jpg) no-repeat;
+    background: url(/materiales/img/pandarojoproductora.jpg) no-repeat;
     background-size: cover;
     height: 0.5vh;
     min-height: 600px;
