@@ -26,7 +26,7 @@ p {
     color: white;
 }
 
-/*novedades*/
+/*inicio de novedades*/
 .lista-novedades {
     margin: 0;
     padding: 0;
@@ -48,12 +48,12 @@ p {
     margin: 10px;
 }
 
-.lista-novedades li a:hover{
+.lista-novedades li a:hover {
     color: white;
     background-color: red;
 }
 
-.lista-novedades li a img{
+.lista-novedades li a img {
     width: 120px;
     height: 50px;
     filter: grayscale();
@@ -63,18 +63,43 @@ p {
 
 }
 
-.lista-novedades li a:hover img{
+.lista-novedades li a:hover img {
     filter: none;
     margin-right: 1.4rem;
     opacity: 1;
 }
+
 /*fin novedades*/
-.testimonios{
+/*inicio de testimonios*/
+.testimonios {
     background-color: red;
     padding-bottom: rem !important;
 }
 
-.testimonio{
+.testimonio {
     text-align: center;
     padding: 50px 20px;
+}
+
+/*fin de testimonios*/
+/* comienzo de nosotros */
+.staff {
+    background: pink;
+}
+
+/* fin de nosotros */
+/* inicio de visitanos */
+.mapa iframe {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+/* fin de visitanos */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll_section{
+    margin-top: 56px;
 }
