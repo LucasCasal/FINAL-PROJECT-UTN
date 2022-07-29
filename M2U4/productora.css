@@ -45,7 +45,7 @@ p {
     color: black;
     transition: all .3s ease-in-out;
     display: block;
-    margin: 10px;
+
 }
 
 .lista-novedades li a:hover {
@@ -73,7 +73,7 @@ p {
 /*inicio de testimonios*/
 .testimonios {
     background-color: red;
-    padding-bottom: rem !important;
+    padding-bottom: 4rem !important;
 }
 
 .testimonio {
@@ -96,10 +96,14 @@ p {
 
 /* fin de visitanos */
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.scroll_section{
-    margin-top: 56px;
+.scroll_section {
+    margin-top: 150px;
+}
+
+#visitanos {
+    background-color: red;
 }
