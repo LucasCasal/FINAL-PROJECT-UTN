@@ -54,7 +54,7 @@ p {
 }
 
 .lista-novedades li a img {
-    width: 120px;
+    width: 140px;
     height: 50px;
     filter: grayscale();
     transition: all .2s ease-in-out;
@@ -78,7 +78,7 @@ p {
 
 .testimonio {
     text-align: center;
-    padding: 17.5px 20px;
+    padding: 40px 20px;
 }
 
 /*fin de testimonios*/
@@ -101,7 +101,7 @@ html {
 }
 
 .scroll_section {
-    margin-top: 150px;
+    margin-top: 56px;
 }
 
 #visitanos {
