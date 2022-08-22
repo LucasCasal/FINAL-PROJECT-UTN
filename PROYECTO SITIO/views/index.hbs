@@ -9,7 +9,6 @@
         </div>
     </div>
     <!--fin del home-->
-
     <!-- inicio de Novedades -->
     <div class="row my-3">
         <!-- inicio de novedades -->
@@ -73,7 +72,6 @@
             </div><!-- fin caruosel testimonios -->
         </div><!-- fin testimonios -->
     </div><!-- fin Novedades -->
-
     <!-- inicio modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -113,10 +111,10 @@
     </div> <!-- fin de historia -->
     <!-- inicio nosotros -->
     <div id="nosotros" class="row align-items-center my-2 staff py-4 scroll_section">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-lg-8 offset-lg-1">
             <h2>Nosotros</h2>
             <div class="row row-cols-1 row-cols-md-2 g-2">
-                <div class="col">
+                <div class="col my-2">
                     <div class="card">
                         <img src="images/yo.jpeg" class="card-img-top" alt="Lucas Casal Goncalves Do Rego">
                         <div class="card-body">
@@ -147,7 +145,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="card">
                         <img src="images/vicky.jpeg" class="card-img-top" alt="Maria Victoria Piemonte">
@@ -180,13 +177,12 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.268612109961!2d14.411360714587946!3d41.77942437956404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133085976415e645%3A0x64171c840519fbdc!2sVia%20Guglielmo%20Marconi%2C%2025%2C%2086086%20Poggio%20Sannita%20IS!5e0!3m2!1ses-419!2sit!4v1659013472013!5m2!1ses-419!2sit">
                 </iframe>
-
             </div>
         </div><!-- fin visitanos -->
         <!-- inicio id Contactanos -->
         <div class="col-md-4 mt-4 mt-sm-0">
             <h2>Contactanos</h2>
-            <div class="row g-3" action="/" method="post">
+            <form class="row g-3" action="/" method="post">
                 <div class="col-md-6">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nombre" name="nombre">
@@ -207,13 +203,12 @@
                     <label for="mensaje" class="form-label">Mensaje</label>
                     <textarea class="form-control" id="mensaje" rows="3" name="mensaje"></textarea>
                 </div>
+                
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
-            </div>
+            </form>
             <p>{{message}}</p>
         </div><!-- cierra div con id contactanos -->
     </div><!-- cierra div con id conocenos -->
-
-
 </div><!-- fin contenedor principal -->

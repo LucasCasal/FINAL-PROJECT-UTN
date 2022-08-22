@@ -1,3 +1,4 @@
+const { application } = require('express');
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
@@ -11,15 +12,16 @@ router.post('/', async (req, res, next) => {
 
   console.log(req.body) // estoy capturando datos?
 
-  var nombre = req.body.nombre;
-  var email = req.body.email;
-  var tel = req.body.tel;
-  var mensaje = req.body.mensaje;
+  var nombre = req.body.nombre;//Lucas
+  var apellido = req.body.apellido;//Casal Goncalves Do Rego
+  var email = req.body.email;//dustwestcool@gmail.com 
+  var tel = req.body.tel;//1167315036
+  var mensaje = req.body.mensaje;//estoy llegando?
 
   var obj = {
     to: 'dustwestcool@gmail.com',
     subject: 'PROGRAMADOR WEB',
-    html: nombre + " se contacto a través de la web y quiere más informacion a este correo: " + email + ".<br> Además, hizo este comnetari : " + mensaje + ". <br> Su tel es : " + tel
+    html: nombre + " " + apellido + " se contacto a través de la web y quiere más informacion a este correo: " + email + ".<br> Además, hizo este comnetario : " + mensaje + ". <br> Su tel es : " + tel
   } //cierra var obj
 
   var transporter = nodemailer.createTransport({
@@ -27,7 +29,7 @@ router.post('/', async (req, res, next) => {
     port: porcces.env.SMTP_PORT,
     auth: {
       user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS
+      pass: process.env.SMTP_PASS,
     }
   })// cierra transporter
 

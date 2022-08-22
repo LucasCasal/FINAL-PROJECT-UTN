@@ -87,6 +87,13 @@ p {
     background: pink;
 }
 
+.my-2 {
+    margin-top:
+        0.5rem !important;
+    margin-bottom:
+        0.5rem !important;
+}
+
 /* fin de nosotros */
 /* inicio de visitanos */
 .mapa iframe {
@@ -101,7 +108,7 @@ html {
 }
 
 .scroll_section {
-    margin-top: 60px;
+    scroll-margin-top: 60px;
 }
 
 #visitanos {
