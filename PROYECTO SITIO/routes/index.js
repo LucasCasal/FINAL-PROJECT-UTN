@@ -21,12 +21,12 @@ router.post('/', async (req, res, next) => {
   var obj = {
     to: 'dustwestcool@gmail.com',
     subject: 'PROGRAMADOR WEB',
-    html: nombre + " " + apellido + " se contacto a través de la web y quiere más informacion a este correo: " + email + ".<br> Además, hizo este comnetario : " + mensaje + ". <br> Su tel es : " + tel
+    html: nombre + " " + apellido + " " + " se contacto a través de la web y quiere más informacion a este correo: " + email + ".<br> Además, hizo este comnetario : " + mensaje + ". <br> Su tel es : " + tel
   } //cierra var obj
 
   var transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
-    port: porcces.env.SMTP_PORT,
+    port: process.env.SMTP_PORT,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
