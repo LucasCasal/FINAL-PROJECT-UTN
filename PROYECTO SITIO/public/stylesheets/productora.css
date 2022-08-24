@@ -85,6 +85,19 @@ p {
 /* comienzo de nosotros */
 .staff {
     background: pink;
+    margin: 0px;
+}
+
+.col {
+    margin: 0px;
+}
+
+.row row-cols-1 row-cols-md-2 g-2 {
+    margin: 0px;
+}
+
+.col-lg-8 offset-lg-1 {
+    margin: 0pxs;
 }
 
 /* fin de nosotros */
