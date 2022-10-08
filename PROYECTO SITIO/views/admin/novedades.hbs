@@ -17,9 +17,10 @@
     <div class="col-7" style="margin-top:-9px ;">
       <h2>Listado de Novedades</h2>
     </div>
-    <div class="col-5 text-end"><a href="" class="btn btn-success"><i
-          class="fa fa-plus"
-        ></i>Nuevo</a></div>
+    <div class="col-5 text-end"><a
+        href="/admin/novedades/agregar"
+        class="btn btn-success"
+      ><i class="fa fa-plus"></i>Nuevo</a></div>
   </div>
   {{! fin fila 2 }}
   {{! inicio fila 3 }}
@@ -35,19 +36,18 @@
         </thead>
         <tbody>
           {{#each novedades}}
-          <tr>
-            <th scope="row">{{id}}</th>
-            <td>{{titulo}}</td>
-            <td class="text-end">
-              <a href="" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i></a>
-              <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i class="fas fa-trash"></i></a>
-            </td>
-          </tr>
+            <tr>
+              <th scope="row">{{id}}</th>
+              <td>{{titulo}}</td>
+              <td class="text-end">
+                <a href="/admin/novededes/modificar/{{id}}" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i></a>
+                <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i class="fas fa-trash"></i></a>
+              </td>
+            </tr>
           {{/each}}
         </tbody>
       </table>
     </div>
   </div>
-
 </div>
 {{! fin container }}
