@@ -28,7 +28,7 @@ async function getNovedadById(id) {
   var query = "select * from novedades where id=? ";
   var rows = await pool.query(query, [id]);
   return rows[0];
-}
+} // cierra novedades
 
 async function modificarNovedadesById(obj, id) {
   try {
@@ -38,11 +38,12 @@ async function modificarNovedadesById(obj, id) {
   } catch (error) {
     throw error;
   }
-}
+} // cierra modi >update
 
 module.exports = {
   getNovedades,
   deleteNovedadesById,
   insertNovedad,
   getNovedadById,
+  modificarNovedadesById,
 };
