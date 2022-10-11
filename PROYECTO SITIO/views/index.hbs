@@ -18,7 +18,7 @@
       <ul class="lista-novedades">
         {{#each novedades}}
           <li><a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}">
-              <img src="images/bienvenidos.jpeg" />{{titulo}}</a>
+              <img src="{{imagen}}" />{{titulo}}</a>
           </li>
         {{/each}}
       </ul>
@@ -105,7 +105,8 @@
       id="Modal{{id}}"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -118,6 +119,7 @@
             ></button>
           </div>
           <div class="modal-body">
+            <img src="{{imagen}}" />
             <h3>{{subtitulo}}</h3>
             <p>{{cuerpo}}</p>
           </div>
