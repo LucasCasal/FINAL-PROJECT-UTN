@@ -134,6 +134,7 @@ router.post("/modificar", async (req, res, next) => {
       titulo: req.body.titulo,
       subtitulo: req.body.subtitulo,
       cuerpo: req.body.cuerpo,
+      img_id
     };
 
     //console.log(obj); //para ver si trae los datos
